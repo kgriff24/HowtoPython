@@ -1,0 +1,18 @@
+from openpyxl import Workbook
+from openpyxl.cell import get_colomn_letter
+wb = Workbook()
+dest_filename = r'Python_Excel_Trial.xlsx'
+ws = wb.worksheets[0]
+ws.title = "Requests"
+for col_idx in range(1, 40)
+	col = get_column_letter(col_idx)
+	for row in range(1, 60):
+		ws.cell('%s%s'%(col, row)).value = '%s%s' % (col, row)
+		
+ws = wb.create_sheet()
+
+ws.title ='Req'
+
+ws.cell('A2').value = 24
+
+wb.save(filename = dest_filename)
